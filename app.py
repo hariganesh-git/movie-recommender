@@ -111,7 +111,7 @@ API_KEY = os.getenv("TMDB_API_KEY") or st.secrets.get("TMDB_API_KEY")
 
 # ------------------ LOAD DATA ------------------ #
 df = pickle.load(open("movies.pkl", "rb"))
-cosine_sim = pickle.load(open("cosine_sim.pkl", "rb"))
+
 
 df["title_lower"] = df["title"].str.lower()
 indices = pd.Series(df.index, index=df["title_lower"]).drop_duplicates()
