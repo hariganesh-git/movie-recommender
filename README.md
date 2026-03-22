@@ -42,10 +42,13 @@ movie-recommender/
 2. Go to folder
    cd movie-recommender
 
-3. Install dependencies
+3. To get .pkl files
+   run model.py
+
+5. Install dependencies
    pip install -r requirements.txt
 
-4. Run the app
+6. Run the app
    streamlit run app.py
 
 ---
