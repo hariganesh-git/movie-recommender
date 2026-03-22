@@ -42,13 +42,17 @@ movie-recommender/
 2. Go to folder
    cd movie-recommender
 
-3. To get .pkl files
-   run model.py
+3. For Cosine Similarity Pickle File 
+   Due to GitHub size limits, download the similarity matrix from Google Drive:
+   https://drive.google.com/uc?id=1iAMTPxBZ9aQuzXseuD0k2P4ymiq8V-LM
 
-5. Install dependencies
+4. Install dependencies
    pip install -r requirements.txt
 
-6. Run the app
+5. For Movie Poster
+   create account in tmdb > generate API for personal use > use the api key terminal using set TMDB_API_KEY=your_api_key_here
+
+5. Run the app
    streamlit run app.py
 
 ---
