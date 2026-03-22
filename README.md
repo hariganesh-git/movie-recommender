@@ -55,13 +55,14 @@ movie-recommender/
 
 ## 🌐 Live Demo
 
-(Add your deployed link here after deploying)
+https://movie-recommender-hgr.streamlit.app
 
 ---
 
 ## 📸 Screenshot
 
-(Add your app screenshot here)
+<img width="577" height="497" alt="image" src="https://github.com/user-attachments/assets/4d97c0c7-c81c-4020-a8b2-f623378cd10c" />
+
 
 ---
 
