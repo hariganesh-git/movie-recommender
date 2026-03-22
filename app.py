@@ -6,6 +6,16 @@ import requests
 import urllib.parse
 import os
 
+import gdown
+
+url = "https://drive.google.com/uc?id=1iAMTPxBZ9aQuzXseuD0k2P4ymiq8V-LM"
+output = "model.pkl"
+
+if not os.path.exists(output):
+    gdown.download(url, output, quiet=False)
+
+
+
 st.markdown("""
 <style>
 
