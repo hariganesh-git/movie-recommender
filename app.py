@@ -7,16 +7,6 @@ import urllib.parse
 import os
 import gdown
 
-
-
-url = "https://drive.google.com/uc?id=1iAMTPxBZ9aQuzXseuD0k2P4ymiq8V-LM"
-output = "cosine_sim.pkl"
-
-if not os.path.exists(output):
-    gdown.download(url, output, quiet=False)
-
-model = pickle.load(open('cosine_sim.pkl', 'rb'))
-
 st.markdown("""
 <style>
 
@@ -90,6 +80,16 @@ li[role="option"]:hover {
 
 </style>
 """, unsafe_allow_html=True)
+
+url = "https://drive.google.com/uc?id=1iAMTPxBZ9aQuzXseuD0k2P4ymiq8V-LM"
+output = "cosine_sim.pkl"
+
+if not os.path.exists(output):
+    gdown.download(url, output, quiet=False)
+
+model = pickle.load(open('cosine_sim.pkl', 'rb'))
+
+
 
 # ------------------ CONFIG ------------------ #
 st.set_page_config(page_title="Movie Recommender By Hari Ganesh", page_icon="🎬", layout="wide")
