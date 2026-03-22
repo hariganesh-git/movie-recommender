@@ -26,7 +26,7 @@ output = "cosine_sim.pkl"
 if not os.path.exists(output):
     gdown.download(url, output, quiet=False)
 
-model = pickle.load(open('cosine_sim.pkl', 'rb'))
+cosine_sim = pickle.load(open('cosine_sim.pkl', 'rb'))
 
 st.markdown("""
 <style>
