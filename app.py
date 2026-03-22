@@ -5,8 +5,9 @@ import difflib
 import requests
 import urllib.parse
 import os
-
 import gdown
+
+model = pickle.load(open('model.pkl', 'rb'))
 
 url = "https://drive.google.com/uc?id=1iAMTPxBZ9aQuzXseuD0k2P4ymiq8V-LM"
 output = "model.pkl"
