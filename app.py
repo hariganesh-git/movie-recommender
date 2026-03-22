@@ -7,10 +7,10 @@ import urllib.parse
 import os
 import gdown
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('cosine_sim.pkl', 'rb'))
 
 url = "https://drive.google.com/uc?id=1iAMTPxBZ9aQuzXseuD0k2P4ymiq8V-LM"
-output = "model.pkl"
+output = "cosine_sim.pkl"
 
 if not os.path.exists(output):
     gdown.download(url, output, quiet=False)
