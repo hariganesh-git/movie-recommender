@@ -136,7 +136,7 @@ def fetch_poster(movie_title):
     except Exception as e:
         print("Error:", e)
 
-    # ✅ ALWAYS RETURN VALID IMAGE (IMPORTANT FIX)
+    # ✅ ALWAYS RETURN VALID IMAGE
     return "https://via.placeholder.com/300x450.png?text=No+Image"
 
 # ------------------ RECOMMEND ------------------ #
